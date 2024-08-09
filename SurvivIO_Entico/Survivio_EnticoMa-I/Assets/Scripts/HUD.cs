@@ -30,6 +30,18 @@ public class HUD : MonoBehaviour
         refillPistol.gameObject.SetActive(false);
         refillShotgun.gameObject.SetActive(false);
         refillSemi.gameObject.SetActive(false);
+
+        playerCurrHealth.text = GameManager.Instance.player.HP.currHP.ToString();
+        playerMaxHealth.text = GameManager.Instance.player.HP.maxHP.ToString();
+
+        ammoActiveSemi.text = semi.GetComponent<GunSemi>().currAmmo.ToString();
+        ammoStockSemi.text = semi.GetComponent<GunSemi>().reserveAmmo.ToString();
+
+        ammoActivePistol.text = pistol.GetComponent<GunPistol>().currAmmo.ToString();
+        ammoStockPistol.text = pistol.GetComponent<GunPistol>().reserveAmmo.ToString();
+
+        ammoActiveShotgun.text = shotgun.GetComponent<GunShotgun>().currAmmo.ToString();
+        ammoStockShotgun.text = shotgun.GetComponent<GunShotgun>().reserveAmmo.ToString();
     }
 
     // Update is called once per frame

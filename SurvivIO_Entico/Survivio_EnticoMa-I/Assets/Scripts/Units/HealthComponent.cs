@@ -8,10 +8,16 @@ public class HealthComponent : MonoBehaviour
     public int maxHP;
     public int currHP;
 
+    [SerializeField]
+    public HealthBarFloating HPbar;
+
     // Start is called before the first frame update
     void Start()
     {
         currHP = maxHP;
+
+        HPbar = this.GetComponentInChildren<HealthBarFloating>();
+        HPbar.UpdateHP(currHP, maxHP);
     }
 
     private void Update()
@@ -25,6 +31,7 @@ public class HealthComponent : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currHP -= damage;
+        HPbar.UpdateHP(currHP, maxHP);
     }
     
     private void zeroHealth()

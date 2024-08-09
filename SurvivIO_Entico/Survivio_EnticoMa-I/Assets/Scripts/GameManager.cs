@@ -15,7 +15,7 @@ public class GameManager : Singleton<GameManager>
 
     void Start()
     {
-
+        gunHolder = GameObject.Find("Player/GunHolder");
     }
 
 
