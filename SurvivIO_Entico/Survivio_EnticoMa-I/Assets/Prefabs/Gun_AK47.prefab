@@ -100,14 +100,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4971937614541835435}
   bullet: {fileID: 2494481077263140247, guid: bd9d2405edec0c7408dac373b6a17c6e, type: 3}
-  canShoot: 0
+  name: 
+  canShoot: 1
   isOnCoolDown: 0
-  reloadTime: 0
-  fireRate: 0
-  bulletSpeed: 0
-  currAmmo: 0
-  reserveAmmo: 0
-  maxClip: 0
+  reloadTime: 1
+  fireRate: 0.09
+  bulletSpeed: 500
+  currAmmo: 50
+  reserveAmmo: 100
+  maxClip: 50
   timeBetweenBullets: 0.2
   bulletsInSeries: 3
   timeBetweenSeries: 1

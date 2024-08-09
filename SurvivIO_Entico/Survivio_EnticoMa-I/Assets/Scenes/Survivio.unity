@@ -7918,6 +7918,7 @@ GameObject:
   - component: {fileID: 1003922647}
   - component: {fileID: 1003922648}
   - component: {fileID: 1003922649}
+  - component: {fileID: 1003922650}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -8085,7 +8086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf938c7547b6e9d4e930d139413971d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  movementSpeed: 4
   playerUnit: {fileID: 1003922642}
   joystickMovement: {fileID: 748900732}
 --- !u!114 &1003922649
@@ -8100,6 +8101,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fe5c73907b82eb428be43357a27d66a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
+  HP: {fileID: 1003922650}
+  gunArray:
+  - {fileID: 1480937565}
+  - {fileID: 1787496049}
+  - {fileID: 295021074}
+  speed: 0
+  hitbox: {fileID: 1003922647}
+--- !u!114 &1003922650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003922639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686bf000c78696e40aa957da5d9a719e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  currHP: 100
 --- !u!1 &1073890507
 GameObject:
   m_ObjectHideFlags: 0
@@ -8802,6 +8825,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178639080}
   m_CullTransparentMesh: 1
+--- !u!1 &1313246604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313246605}
+  - component: {fileID: 1313246606}
+  m_Layer: 0
+  m_Name: 'Spawner Enemy '
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1313246605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313246604}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.57, y: 6.28, z: 0.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1313246606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313246604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93b6d775149e3d46957a4ca371cb349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnEnemy:
+  - {fileID: 8526903058010530517, guid: fdf21f0a33d9bed45a9c49fee18f3e32, type: 3}
 --- !u!1 &1353865668
 GameObject:
   m_ObjectHideFlags: 0
@@ -11432,6 +11501,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1003922641}
   - {fileID: 1749668746}
+  - {fileID: 1313246605}
   - {fileID: 1355494643}
   - {fileID: 2128661420}
   - {fileID: 777749488}

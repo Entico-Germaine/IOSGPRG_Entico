@@ -36,10 +36,10 @@ public class HUD : MonoBehaviour
     void Update()
     {
        
-        //playerCurrHealth.text = GameManager.Instance.player.HP.currHP.ToString();
-        //playerMaxHealth.text = GameManager.Instance.player.HP.maxHP.ToString();
+        playerCurrHealth.text = GameManager.Instance.player.HP.currHP.ToString();
+        playerMaxHealth.text = GameManager.Instance.player.HP.maxHP.ToString();
 
-        // check for ammo - must be from the player, not from this hud
+        // check for ammo
         ammoActiveSemi.text = semi.GetComponent<GunSemi>().currAmmo.ToString();
         ammoStockSemi.text = semi.GetComponent<GunSemi>().reserveAmmo.ToString();
 

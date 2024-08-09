@@ -131,12 +131,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 7026531717697360416}
   bullet: {fileID: 2494481077263140247, guid: bd9d2405edec0c7408dac373b6a17c6e, type: 3}
+  name: 
   canShoot: 0
   isOnCoolDown: 0
   reloadTime: 0
-  fireRate: 0
-  bulletSpeed: 0
-  currAmmo: 0
-  reserveAmmo: 0
-  maxClip: 0
-  bulletSpread: 0
+  fireRate: 2
+  bulletSpeed: 100
+  currAmmo: 3
+  reserveAmmo: 6
+  maxClip: 3
+  bulletSpread: 10

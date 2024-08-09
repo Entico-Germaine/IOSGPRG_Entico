@@ -5,6 +5,7 @@ using UnityEngine;
 public class AmmoBase : MonoBehaviour
 {
     public float timetoClear;
+    public int damage;
 
     private GameObject gunHolder;
 

@@ -161,6 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b830f5fed34a1243bb0e5a659f6eb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoName: 
-  damage: 0
   timetoClear: 0
+  damage: 5
