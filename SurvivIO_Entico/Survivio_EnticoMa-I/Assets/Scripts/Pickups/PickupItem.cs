@@ -23,11 +23,22 @@ public class PickupItem : MonoBehaviour
 
         if (collision.gameObject.GetComponentInChildren<UnitBase>())
         {
-            // collision.AddAmmoToPlayer()
-            Debug.Log(randItem.ToString());
-            Debug.Log(isPistolAmmo);
-            Debug.Log(isShotgunAmmo);
-            Debug.Log(isSemiAmmo);
+            if(collision.gameObject.GetComponent<UnitPlayer>())
+            {
+                if (isSemiAmmo == true)
+                {
+                    GameManager.Instance.gunHolder.GetComponentInChildren<GunSemi>(true).AddAmmo(randItem);
+                }
+                else if (isPistolAmmo == true)
+                {
+                    GameManager.Instance.gunHolder.GetComponentInChildren<GunPistol>(true).AddAmmo(randItem);
+                }
+                else if (isShotgunAmmo == true)
+                {
+                    GameManager.Instance.gunHolder.GetComponentInChildren<GunShotgun>(true).AddAmmo(randItem);
+                }
+            }
+            
             Destroy(this.gameObject);
         }
     }

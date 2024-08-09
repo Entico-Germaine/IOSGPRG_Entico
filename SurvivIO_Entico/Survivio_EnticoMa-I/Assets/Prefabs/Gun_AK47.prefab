@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4410908367991825514}
   - component: {fileID: 6286198337403555494}
+  - component: {fileID: 8706279809190171655}
   m_Layer: 0
   m_Name: Gun_AK47
   m_TagString: Untagged
@@ -85,6 +86,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8706279809190171655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450410610192046373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837afbf83c663ce488a2756b9119973e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 4971937614541835435}
+  bullet: {fileID: 2494481077263140247, guid: bd9d2405edec0c7408dac373b6a17c6e, type: 3}
+  canShoot: 0
+  isOnCoolDown: 0
+  reloadTime: 0
+  fireRate: 0
+  bulletSpeed: 0
+  currAmmo: 0
+  reserveAmmo: 0
+  maxClip: 0
+  timeBetweenBullets: 0.2
+  bulletsInSeries: 3
+  timeBetweenSeries: 1
 --- !u!1 &5621804365835041808
 GameObject:
   m_ObjectHideFlags: 0

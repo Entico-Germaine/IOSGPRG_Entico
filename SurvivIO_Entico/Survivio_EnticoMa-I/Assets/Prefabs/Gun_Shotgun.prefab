@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4988941886924537838}
   - component: {fileID: 5614756048221821318}
+  - component: {fileID: 1318760970546349678}
   m_Layer: 0
   m_Name: Gun_Shotgun
   m_TagString: Untagged
@@ -116,3 +117,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1318760970546349678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6212294993525200421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9635031982ba1746b446ccf5ae558d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 7026531717697360416}
+  bullet: {fileID: 2494481077263140247, guid: bd9d2405edec0c7408dac373b6a17c6e, type: 3}
+  canShoot: 0
+  isOnCoolDown: 0
+  reloadTime: 0
+  fireRate: 0
+  bulletSpeed: 0
+  currAmmo: 0
+  reserveAmmo: 0
+  maxClip: 0
+  bulletSpread: 0
